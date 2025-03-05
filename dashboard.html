@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkIt Clone</title>
+    <link rel="Stylesheet" href="deshboard.css">
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="logo-section">
+            <div class="logo">blink<span class="highlight">it</span></div>
+        </div>
+
+        <div class="address-section">
+            <p class="delivery-time">Delivery in <b>20 minutes</b></p>
+            <p class="location">142p, Sector 44, Gurugram, Haryana</p>
+        </div>
+
+        <div class="search-section">
+            <div class="search-bar" onclick="redirectToSearch()">
+                <img src = "search.png" alt="Search Icon" class="search-icon">
+                <input type="text" id="searchInput" placeholder='Search "sugar"'>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+            <div class="cart">
+                <img src="cart.icon.png" alt="Cart Icon" class="cart-icon">
+                <span>My Cart</span>
+             </div>
+        </div>
+
+    </nav>
+    <script>
+        function redirectToSearch(){
+            window.location.href = "search.html";
+        }
+    </script>
+
+    <script src="Script.js"></script>
+    
+</body>
+</html>

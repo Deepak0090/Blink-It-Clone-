@@ -1,0 +1,112 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Logo Section */
+.logo-section {
+    flex: 0.8;
+    border: 0.1px;
+}
+
+.logo {
+    font-size: 37px;
+    font-weight: 800;
+    color: #FFC72C;
+    font-family: 'Montserrat','Poppins',sans-serif;
+}
+
+.highlight {
+    color: green;
+}
+
+/* Address Section */
+.address-section {
+    flex: 1;
+    border-left: 1px solid #e0e0e0;
+    padding-left: 30px;
+    justify-content: center;
+}
+
+.delivery-time {
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.location {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Search Bar */
+.search-section {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.search-icon {
+    width: 20px;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.login-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: 20px;
+    margin-right: 5px;
+}

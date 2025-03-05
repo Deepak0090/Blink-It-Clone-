@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>SIGN_UP</h2>
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone"placeholder="Contact No" required>
+            
+                <input type="password" id="password" placeholder="Password" required>
+                 <select id="role" required>
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="USER">USER</option> 
+                    <option value="ADMIN">ADMIN</option> 
+                 </select>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Already Have a Account?<a href="login.html"> Login Here</a></p>
+    </div>
+    <script src="Script.js"></script>
+    
+</body>
+</html>
