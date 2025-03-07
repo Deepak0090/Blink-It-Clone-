@@ -1,4 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", function (){
+
   document.getElementById("loginform")?.addEventListener("submit", function(event){
 
     event.preventDefault();
@@ -75,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function (){
                 
                 method:"POST",
                 headers:{ "Content-Type": "application/json"},
-                body:JSON.stringify({email,tempPassword,newPassword}) // for mathch with Dto format
+                body:JSON.stringify({email,tempPassword,newPassword}) 
             })
             .then(response =>{
                 if(!response.ok){
@@ -94,30 +96,53 @@ document.addEventListener("DOMContentLoaded", function (){
             });
        });
 
-       const searchInput = document.getElementById("searchInput");
+    const searchInput = document.getElementById("searchInput");
     const placeholder = ["Search 'Chocolate'", "Search 'Biscuits'", "Search 'Milk'", "Search 'Chips'", "Search 'PaperRole'"];
     let index = 0;
 
     function changePlaceholder() {
-        if (!searchInput) return; // Ensure input exists
+        if (!searchInput) return; 
 
-        searchInput.style.transition = "transform 0.3s ease, opacity 0.3s ease"; // Smooth transition
+        searchInput.style.transition = "transform 0.3s ease, opacity 0.3s ease"; 
         searchInput.style.transform = "translateY(10px)"; // Move down slightly before transition
-        searchInput.style.opacity = "0"; // Fade out effect
+        searchInput.style.opacity = "0"; 
 
         setTimeout(() => {
-            searchInput.placeholder = placeholder[index]; // Corrected variable name
-            searchInput.style.transform = "translateY(0px)"; // Move up to original position
+            searchInput.placeholder = placeholder[index]; 
+            searchInput.style.transform = "translateY(0px)"; 
             searchInput.style.opacity = "1"; // Fade in effect
         }, 300); // Smooth transition timing
 
-        index = (index + 1) % placeholder.length; // Loop through placeholders
+        index = (index + 1) % placeholder.length; 
     }
 
-    setInterval(changePlaceholder, 2000); // Change every 2 seconds
+    setInterval(changePlaceholder, 2000); 
     changePlaceholder();
 
     
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const loginBtn = document.getElementById("login-btn");
+    const logoutBtn = document.getElementById("logout-btn");
+    const token = localStorage.getItem("token");
+    if(token){
+        loginBtn.style.display="none";
+        logoutBtn.style.display="block";
+    }else{
+        loginBtn.style.display="block";
+        logoutBtn.style.display="none";
+    }
+    if(logoutBtn){
+    logoutBtn.addEventListener("click", function() {
+        localStorage.removeItem("token");
+        alert("Logged out successfully!");
+        window.location.href="dashboard.html";
+    });
+}
+
+});
+
 
 

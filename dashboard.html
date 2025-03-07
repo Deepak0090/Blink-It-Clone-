@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlinkIt Clone</title>
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png">
     <link rel="Stylesheet" href="deshboard.css">
 </head>
 <body>
+      
     <nav class="navbar">
-
         <div class="logo-section">
             <div class="logo">blink<span class="highlight">it</span></div>
+            <div class="logo-border"></div>
         </div>
 
         <div class="address-section">
-            <p class="delivery-time">Delivery in <b>20 minutes</b></p>
+            <p class="delivery-time">Delivery in 20 minutes</p>
             <p class="location">142p, Sector 44, Gurugram, Haryana</p>
         </div>
 
@@ -26,14 +28,304 @@
         </div>
 
         <div class="nav-right">
-            <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+            <button id="login-btn" class="auth-btn" onclick="window.location.href='login.html'">Login</button>
+            <button id="logout-btn" class="auth-btn" style="display: none;" onclick="logout()">Logout</button>
             <div class="cart">
                 <img src="cart.icon.png" alt="Cart Icon" class="cart-icon">
-                <span>My Cart</span>
+                <span class="cart-font">My Cart</span>
              </div>
         </div>
 
     </nav>
+        <main>
+            <div class="main-container">
+                <section class="section-1">
+                    <img src="Indias.png" alt="banner">
+                </section>
+
+                <section class="section-2">
+
+                    <div class="section-2-img">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/electronic-WEB-1.jpg" alt="">
+                    </div>
+
+                    <div class="section-2-img">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/staples-WEB.jpg" alt="">
+                    </div>
+
+                    <div class="section-2-img">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/mango-WEB-1.png" alt="">
+                    </div>
+
+                    <div class="section-2-img">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/summer_WEB.jpg" alt="">
+    
+                    </div>
+            </section>
+
+            <section class="section-3">
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png">
+                </div>
+                <div class="section-3-img">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png">
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png">
+                </div>
+
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-14.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-12.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-15.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-17.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-20.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-14.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-14.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png">
+                    
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-16.png">
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png">
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-19.png">
+                </div>
+                <div class="section-3-img">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-18.png">
+                </div>
+            </section>
+
+            <section class="section-4">
+
+                <div class="section-header">
+                    Hookah
+                </div>
+                <div class="section-list">
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3d94e222-6c7a-45c7-b1d3-99e3329cb5f5.jpg?ts=1729442035" alt="">
+                        <p class="product-card-title">Organic Mud Hookah Chillum by Smokey Lust</p>
+                        <p class="product-card-desc">1 unit</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 80</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/8680873c-be67-41af-92cf-ca2beff3c52d.jpg?ts=1726661157" alt="">
+                        <p class="product-card-title">Metal Coal Hookah Cloud by Smokey Lust</p>
+                        <p class="product-card-desc">1 unit</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 400</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/c489ccad-8251-433d-bba7-53fb75b64cd9.jpg?ts=1725965941" alt="">
+                        <p class="product-card-title">Iron Hookah Tong by Smokey Lust</p>
+                        <p class="product-card-desc">1 unit</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 120</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480932a.jpg?ts=1688628164" alt="">
+                        <p class="product-card-title">Natural Spring Water Herbal Hookah Flavor (Tobacco Free) by Soex</p>
+                        <p class="product-card-desc">50 g</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 100</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/540990a.jpg" alt="">
+                        <p class="product-card-title">Hookah Premium Plastic Filters by Rhythm Imports</p>
+                        <p class="product-card-desc">1 pack(20 pieses)</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 150</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/61eb3cc7-6bd1-4ba9-b03c-44e4c8a0f8a3.jpg?ts=1736847234" alt="">
+                        <p class="product-card-title">Instant Ignite Magic Coal by Bongchie</p>
+                        <p class="product-card-desc">1 pack (10 pieses)</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 100</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/540986a.jpg" alt="">
+                        <p class="product-card-title">Premium Silver Hookah Foil by Rhythm Imports</p>
+                        <p class="product-card-desc">1 pack (30 picses)</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 150</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480927a.jpg?ts=1689328456" alt="">
+                        <p class="product-card-title">Brain Freeze Up Herbal Hookah Flavor (Tobacco Free) by Soex</p>
+                        <p class="product-card-desc">50 g</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 80</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480935a.jpg?ts=1687523763" alt="">
+                        <p class="product-card-title">Paan Raas Herbal Hookah Flavor (Tobacco Free) by Soex</p>
+                        <p class="product-card-desc">60 g</p>
+                        <div class="product-action">
+                            <p class="product-qty">150 g</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-4">
+
+                <div class="section-header">
+                    Dairy, Bread & Eggs
+                </div>
+                <div class="section-list">
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480929a.jpg?ts=1687951095" alt="">
+                        <p class="product-card-title">Watermelon Herbal Hookah Flavor (Tobacco Free) by Soex</p>
+                        <p class="product-card-desc">50 g</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 100</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480930a.jpg?ts=1687333267" alt="">
+                        <p class="product-card-title">Bombay Paan Masala Herbal Hookah Flavor (Tobacco Free) by Soex</p>
+                        <p class="product-card-desc">70 g</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 120</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/535602a.jpg?ts=1698309253" alt="">
+                        <p class="product-card-title">Table White Egg - 30 Pieced Tray</p>
+                        <p class="product-card-desc">30 pieces</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 196</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/24194a.jpg?ts=1661157751" alt="">
+                        <p class="product-card-title">Flat Coconut Hookah Coal Cubes by Stash Pro</p>
+                        <p class="product-card-desc">40 pics</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 200</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/535601a.jpg?ts=1698309253" alt="">
+                        <p class="product-card-title">Coconut Hookah Coal Cubes by Stash Pro</p>
+                        <p class="product-card-desc">18 pices</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 150</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480933a.jpg?ts=1688628164" alt="">
+                        <p class="product-card-title">Kiwi Herbal Hookah Flavor (Tobacco Free) by Soex</p>
+                        <p class="product-card-desc">50 g</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 150</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/496995a.jpg?ts=1690814532" alt="">
+                        <p class="product-card-title">Premium Magic Coal By Stash Pro</p>
+                        <p class="product-card-desc">1 pack(20 peces)</p>
+                        <div class="product-action">
+                            <p class="product-qty">₹ 43</p>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+ 
+
+    <!-- <div id="product-section">
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <p>Product 1</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <p>Product 2</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <p>Product 3</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div> -->
     <script>
         function redirectToSearch(){
             window.location.href = "search.html";
