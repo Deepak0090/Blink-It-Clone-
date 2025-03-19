@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function (){
             localStorage.setItem("token", data.token);
             console.log("Login Successful!", data);
             alert("Login successful!");
-            window.location.href="dashboard.html"; // redirect after the login 
+            window.location.href="index.html"; // redirect after the login 
         }
     })
     .catch(error=>{
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
     logoutBtn.addEventListener("click", function() {
         localStorage.removeItem("token");
         alert("Logged out successfully!");
-        window.location.href="dashboard.html";
+        window.location.href="index.html";
     });
 }
 
